@@ -1,19 +1,27 @@
 body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  background-color: #B7E4CF;
+  color: #232444;
+  font-family: Roboto, sans-serif;
+}
+
+div{
+  text-align:center;
+
 }
 
 section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  flex-wrap: wrap;
 }
 
 h2 {
-  margin: 0 auto;
+  margin: 0;
+  color:inherit;
+  display: block;
+  letter-spacing: 0.05em;
+  text-decoration: none;
 }
 
 img,
@@ -21,8 +29,63 @@ a {
   width: 100px;
   height: 100px;
   margin: 20px auto;
+  margin-bottom:0px;
+  text-decoration: none;
+  color: inherit;
 }
 
-a:hover {
-  zoom: 200%;
+.bafw_logo{
+  width:200px;
+  height:auto;
+  border-radius:20px;
+  margin-top:0px;
+}
+
+span{
+  width: 250px;
+  height: 260px;
+  text-align: center;
+  padding-top:10px;
+  border-radius: 10px;
+  background-color:transparent;
+  position: relative;
+}
+
+a:hover{
+  transition: 0.3s all;
+  background-color:white;
+  border-radius: 40px;
+}
+
+span:hover .action_button{
+  color:white;
+}
+
+span a{
+  width:250px;
+  height:270px;
+  padding-top:10px;
+  display:inline-block;
+  position: relative;
+}
+
+i {
+  margin-top:20px;
+  color: #232444;
+}
+
+.action_button{
+  border:none;
+  background-color: #232444;
+  color: #B7E4CF;
+  font-family: Roboto, san-serif;
+  font-size: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom:5px;
+  right: 75px;
+}
+
+.action_button:hover{
+  cursor:pointer;
 }
